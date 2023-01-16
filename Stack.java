@@ -1,10 +1,10 @@
 package com.bridgelabz.day14.UC_Day14_Queue_Stack;
 
-public class Queue {
+public class Stack {
 	LinkedList list = new LinkedList();
-	public void enQueue(Object data)
+	public void push(Object data)
 	{
-		list.addFirstNode(data);
+		list.addLast(data);
 	}
 	public void display()
 	{
@@ -12,11 +12,11 @@ public class Queue {
 	}
 	public static void main(String[] args) {
 		System.out.println("Welcome to Stack and Queue Data structure");
-		Queue queue = new Queue();
-		queue.enQueue(70);
-		queue.enQueue(30);
-		queue.enQueue(56);
-		queue.display();
+		Stack stack = new Stack();
+		stack.push(56);
+		stack.push(30);
+		stack.push(70);
+		stack.display();
 	}
 	
 }
