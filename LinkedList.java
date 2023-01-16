@@ -29,7 +29,10 @@ public class LinkedList {
 			temp.ref = newNode;
 		}
 	}
-	
+	public void deleteFirst()
+	{
+		head = head.ref;
+	}
 	public void display()
 	{
 		Node temp = head;
@@ -47,15 +50,5 @@ public class LinkedList {
 			}
 		}
 	}
-
-//	public static void main(String[] args) {
-//		LinkedList list = new LinkedList();
-//		Scanner sc = new Scanner(System.in);
-//		list.addLast(56);
-//		list.addLast(30);
-//		list.addLast(70);
-//		list.display();
-//		
-//	}
 
 }
